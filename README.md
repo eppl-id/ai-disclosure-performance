@@ -1,12 +1,15 @@
 # AI-related Disclosure & Firm Performance
 
-Zuerst Demo Machen mit 5 Unternehmen, danach ändern auf Variablen, danach die taskfile
-oder python 01_pull_data.py in python ausführen, für pull und clean machen - gucken update von den py dateien, da wird aber bei clean irgendwas gefiltert - ist gefiltert auf EUR Jahresabschluss, sonst nochmal nachschauen, sonst session 4 auch nochmal Variablen anschauen, mit welcher variable komme ich dann da zur Hypothese?!
+
 ExInt II: Research Designs in SME Research | WU Vienna | SS 2026
 
 ## Research Question
 
-Does AI-related disclosure in corporate annual reports have a relationship with firm performance?
+## Research Question
+
+Does R&D intensity influence firm performance among listed firms?
+
+More specifically, this project investigates whether firms with higher R&D intensity show higher accounting-based performance, measured by Return on Assets (RoA).
 
 
 ## Theoretical Background
@@ -21,25 +24,32 @@ Does AI-related disclosure in corporate annual reports have a relationship with 
 
 ## Hypotheses
 
-H1: AI-related disclosure is positively associated with firm performance.
+H1: R&D intensity is positively associated with firm performance.
 
 
-## Key variables:
+## Variables
 
-| Variable | Compustat field(s) / Calculation | Description |
-|---|---|---|
-| ROA | `ib / at` or `ni / at` | Return on assets; main accounting-based performance measure |
-| AI disclosure | `AI keyword count / total words` | AI-related disclosure intensity from annual reports or 10-K filings |
-| Operating margin | `oiadp / sale` | Operating profitability |
-| Sales growth | `(sale_t - sale_t-1) / sale_t-1` | Revenue growth compared to the previous year |
-| Market-to-book | `mkvalt / ceq` | Market-based performance or valuation measure |
-| R&D intensity | `xrd / at` or `xrd / sale` | R&D expenditure scaled by total assets or sales |
-| Firm size | `log(at)` | Log total assets |
-| Leverage | `(dltt + dlc) / at` | Total debt divided by total assets |
-| Industry | `sic` or `naics` | Industry controls |
-| Year | `fyear` | Year controls |
+### Dependent variable (Y)
 
-Note: The AI disclosure variable is not directly available in Compustat. It will be constructed from annual reports or 10-K filings using a keyword-based text analysis approach.
+| Construct | Data Item(s) | Formula | Source |
+|---|---|---|---|
+| Return on Assets (RoA) | `NI`, `AT` | `NI / AT` | WRDS / Compustat |
+
+### Independent variable (X)
+
+| Construct | Data Item(s) | Formula | Source |
+|---|---|---|---|
+| R&D Intensity | `XRD`, `AT` | `XRD / AT` | WRDS / Compustat |
+
+### Controls
+
+| Construct | Data Item(s) | Formula | Source |
+|---|---|---|---|
+| Firm size | `AT` | `log(AT)` | WRDS / Compustat |
+| Leverage | `DLTT`, `DLC`, `SEQ` | `(DLTT + DLC) / SEQ` | WRDS / Compustat |
+| Firm age | `FYEAR`, `INCO` | `FYEAR - INCO` | WRDS / Compustat |
+| Industry | `SIC` or `NAICS` | categorical | WRDS / Compustat |
+| Year | `FYEAR` | categorical | WRDS / Compustat |
 
 ## Key References
 
