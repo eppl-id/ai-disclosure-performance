@@ -1,5 +1,7 @@
 # AI-related Disclosure & Firm Performance
 
+Zuerst Demo Machen mit 5 Unternehmen, danach ändern auf Variablen, danach die taskfile
+oder python 01_pull_data.py in python ausführen, für pull und clean machen - gucken update von den py dateien, da wird aber bei clean irgendwas gefiltert - ist gefiltert auf EUR Jahresabschluss, sonst nochmal nachschauen, sonst session 4 auch nochmal Variablen anschauen, mit welcher variable komme ich dann da zur Hypothese?!
 ExInt II: Research Designs in SME Research | WU Vienna | SS 2026
 
 ## Research Question
