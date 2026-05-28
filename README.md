@@ -48,6 +48,22 @@ H1: R&D intensity is positively associated with firm performance.
 | Industry | `SICH` | categorical | WRDS / Compustat |
 | Year | `FYEAR` | categorical | WRDS / Compustat |
 
+## Data
+
+| Item | Detail |
+|---|---|
+| Source | WRDS / Compustat Global |
+| Table | comp_global_daily.g_funda |
+| Downloaded | 2026-05-28 |
+| License | WRDS subscriber agreement |
+| Fiscal years | 2015–2024 |
+| Raw rows | 338,462 |
+| Clean rows | 26,090 |
+| Clean columns | 444 |
+| Firms | 3,430 |
+| Countries | 46 |
+| Currency filter | EUR only |
+
 ## Key References
 
 | Reference | Research Context | Key Concept | Relevance for This Project |
