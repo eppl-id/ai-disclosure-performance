@@ -45,7 +45,7 @@ H1: R&D intensity is positively associated with firm performance.
 |---|---|---|---|
 | Firm size | `AT` | `log(AT)` | WRDS / Compustat |
 | Leverage | `DLTT`, `DLC`, `SEQ` | `(DLTT + DLC) / SEQ` | WRDS / Compustat |
-| Industry | `SIC` | categorical | WRDS / Compustat |
+| Industry | `SICH` | categorical | WRDS / Compustat |
 | Year | `FYEAR` | categorical | WRDS / Compustat |
 
 ## Key References
