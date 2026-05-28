@@ -5,8 +5,6 @@ ExInt II: Research Designs in SME Research | WU Vienna | SS 2026
 
 ## Research Question
 
-## Research Question
-
 Does R&D intensity influence firm performance among listed firms?
 
 More specifically, this project investigates whether firms with higher R&D intensity show higher accounting-based performance, measured by Return on Assets (RoA).
@@ -33,7 +31,7 @@ H1: R&D intensity is positively associated with firm performance.
 
 | Construct | Data Item(s) | Formula | Source |
 |---|---|---|---|
-| Return on Assets (RoA) | `NI`, `AT` | `NI / AT` | WRDS / Compustat |
+| Return on Assets (RoA) | `NICON`, `AT` | `NICON / AT` | WRDS / Compustat |
 
 ### Independent variable (X)
 
@@ -48,7 +46,7 @@ H1: R&D intensity is positively associated with firm performance.
 | Firm size | `AT` | `log(AT)` | WRDS / Compustat |
 | Leverage | `DLTT`, `DLC`, `SEQ` | `(DLTT + DLC) / SEQ` | WRDS / Compustat |
 | Firm age | `FYEAR`, `INCO` | `FYEAR - INCO` | WRDS / Compustat |
-| Industry | `SIC` or `NAICS` | categorical | WRDS / Compustat |
+| Industry | `SIC` | categorical | WRDS / Compustat |
 | Year | `FYEAR` | categorical | WRDS / Compustat |
 
 ## Key References
